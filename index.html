@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <link rel="shortcut icon" href="favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis recusandae magnam neque, fuga fugit itaque voluptatum ad facere exercitationem unde ea adipisci labore! Aut laboriosam iure unde dolorem voluptatem? Debitis.
-    </p>
+    <header>
+        <h1>Daily Tasks</h1>
+    </header>
+    <nav>
+        <button id="tasks"></button>
+        <button id="inventory"></button>
+    </nav>
+    <div id="task-container">
+        <form id="taskForm">
+            <button id="add-button" type="submit">
+                <img src="images/tarefas diarias.webp" alt="icon-tarefas" draggable="false">
+                <p>Adicionar</p>
+            </button>
+            <input type="text" id="title" placeholder="Título" required>
+            <textarea id="description" placeholder="Descrição" required></textarea>
+        </form>
+    </div>
 </body>
+<script src="index.js"></script>
 </html>
